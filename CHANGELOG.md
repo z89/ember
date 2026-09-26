@@ -1,13 +1,18 @@
 # changelog
 
+## 0.2.0
+
+- mode changes fade. the screen warms or cools over 0.8s instead of snapping, and dms takes over at the value the fade lands on
+- fade length is a plugin setting, 0 for instant
+- the pill, panel and control centre tile show where a fade is heading while it runs
+
 ## 0.1.0
 
-first release.
+first one.
 
-- a bar icon that changes with the mode, shows the current temperature in kelvin, and tints towards amber as the screen warms.
-- a panel with a three way switch: always on, scheduled, off.
-- night and day sliders on one shared range from 2000K to 6500K in 100K steps.
-- live preview while dragging. the value is saved to DMS about 1.2 seconds after you let go.
-- a control centre tile with the same status and toggle.
-- right click on the bar icon flips between always on and scheduled.
-- two cosmetic options on the settings page: show temperature and warm tint.
+- bar pill with icon, live kelvin readout and warm tint
+- panel with a three way switch: always on, scheduled, off
+- night and day sliders on one shared 2000k to 6500k range
+- live preview while dragging, saved to dms state 1.2s after you let go
+- control center tile
+- right click on the pill flips between always on and scheduled
