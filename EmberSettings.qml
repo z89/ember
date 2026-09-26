@@ -30,6 +30,16 @@ PluginSettings {
         defaultValue: true
     }
 
+    SliderSetting {
+        settingKey: "fadeDuration"
+        label: "Fade"
+        description: "How long the screen takes to warm up or cool down when you change mode through Ember. 0 switches instantly"
+        defaultValue: 800
+        minimum: 0
+        maximum: 3000
+        unit: "ms"
+    }
+
     ToggleSetting {
         settingKey: "tintIcon"
         label: "Warm tint"
