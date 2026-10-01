@@ -1,7 +1,7 @@
 {
     "id": "ember",
     "name": "Ember",
-    "description": "night light for dankmaterialshell. a pill on the bar, three modes, live preview while you drag.",
+    "description": "night light for DankMaterialShell. a pill on the bar, three modes, live preview while you drag.",
     "version": "0.2.0",
     "author": "z89",
     "type": "widget",
@@ -14,5 +14,6 @@
     "permissions": [
         "settings_read",
         "settings_write"
-    ]
+    ],
+    "requires_dms": ">=1.7.0"
 }
