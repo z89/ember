@@ -416,7 +416,7 @@ PluginComponent {
                 anchors.verticalCenter: parent.verticalCenter
                 visible: root.showTemp && root.nightShown && (root.fadeBusy || root.liveTemp > 0)
                 text: (root.fadeBusy ? root.fadeTemp : (root.previewTemp > 0 ? root.previewTemp : root.liveTemp)) + "K"
-                font.pixelSize: Theme.fontSizeSmall
+                font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale, root.barConfig?.maximizeWidgetText)
                 color: root.pillColor
             }
         }
@@ -438,7 +438,7 @@ PluginComponent {
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: root.showTemp && root.nightShown && (root.fadeBusy || root.liveTemp > 0)
                 text: Math.round((root.fadeBusy ? root.fadeTemp : root.liveTemp) / 100) / 10 + "k"
-                font.pixelSize: Theme.fontSizeSmall
+                font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale, root.barConfig?.maximizeWidgetText)
                 color: root.pillColor
             }
         }
