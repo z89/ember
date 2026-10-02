@@ -1,5 +1,9 @@
 # changelog
 
+## unreleased
+
+- the pill text follows the DMS bar font scale instead of a fixed size
+
 ## 0.2.0
 
 - mode changes fade. the screen warms or cools over 800ms instead of snapping, and DankMaterialShell (DMS) takes over at the value the fade lands on
